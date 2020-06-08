@@ -35,4 +35,4 @@ In the next step, the script changes original variable names to more tidy format
 
 The average of each variable should be computed for each activity and each subject. To do so, the script groups the dataset by `subject` and `activity_label` (with `group_by` function). For each combination of subject and performed action is then computed mean of every other variable via `summarise_all` function.
 
-The final dataset is then axported as àvg_data.txt`.
+The final dataset is then axported as `avg_data.txt`.

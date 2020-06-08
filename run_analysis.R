@@ -68,7 +68,7 @@ merged_subset <- left_join(merged_subset, activity_labels, by = c("activity" = "
 names(merged_subset) <- tolower(gsub("\\(\\)", "", gsub(" ", "_", names(merged_subset))))
 
 
-# compute average values for each subject and activity
+# compute average values for each combination of subject and activity
 
 variable_means <- merged_subset %>% group_by(subject, activity_label) %>% 
   summarise_all(mean)
